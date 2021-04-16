@@ -102,7 +102,7 @@ def process_dev():
 
 
 def preprocess(args):
-    # dev_dataset = process_dev()
+    dev_dataset = process_dev()
     print(f'Loading data with data_size = {100 * args.data_size}%')
     train_loader = DataLoader(FILE_INDEX_TRAIN, args.data_size)
     train_dataset = train_loader.data

@@ -128,25 +128,25 @@ def parse_args():
         '--use_ip',
         help='Whether to use IP address for classification',
         action='store_true',
-        default=False,
+        default=True,
     )
     parser.add_argument(
         '--use_time',
         help='Whether to use time for classification',
         action='store_true',
-        default=False,
+        default=True,
     )    
     parser.add_argument(
         '--time_weight',
         help='Weight of time',
         type=float,
-        default=0.0,
+        default=2,
     )  
     parser.add_argument(
         '--ip_weight',
         help='Weight of IP addres',
         type=float,
-        default=0.0,
+        default=1,
     )
     return parser.parse_args()
 
